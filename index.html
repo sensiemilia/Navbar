@@ -1,0 +1,32 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="assets/img/logo.svg" alt="logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#">Accueil</a></li>
+          <li><a href="#">Vélo</a></li>
+          <li><a href="#">Parcours</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <img src="assets/img/burger.png" alt="menu burger" class="menuburger" />
+    </nav>
+  </body>
+
+  <script>
+    const menuburger = document.querySelector(".menuburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
